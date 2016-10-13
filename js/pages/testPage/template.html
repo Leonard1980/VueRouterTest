@@ -1,24 +1,21 @@
 <div class="testPage">
 <h1> Testing </h1>
-<router-link :to="{path:'foo', activeClass: 'active'}" >
+<router-link to="/foo" >
   Go to Foo
 </router-link>&nbsp;
 
-<router-link :to="{path:'bar', activeClass: 'active'}">
+<router-link to="/bar">
     Go to Bar
 </router-link>&nbsp;
 
-<router-link :to="{path:'baz', activeClass: 'active'}">
+<router-link to="/baz">
     Go to Baz
 </router-link>&nbsp;
-
-<router-link to="/baz" >
-  Go to Baz (simple)
-</router-link>&nbsp;
-
-<a href="javascript:void(0)" @click="goToBar()">Go to Bar Method</a>
 
   <br/>
   <br/>
   {{ $route.path }}
+  <br/>
+  <br/>
+  <a href="javascript:void(0)" @click="goToBar()">Go to Bar Method</a>
 </div>
