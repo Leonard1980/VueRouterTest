@@ -1,7 +1,7 @@
-import TestPage from './pages/testPage.vue';
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-Vue.use(VueRouter);
+import TestPage from './pages/testPage.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
 var router = new VueRouter({
     linkActiveClass: 'active',
     routes: [
@@ -14,4 +14,4 @@ var router = new VueRouter({
        }
     ]
 });
-export default router;
+export default router
